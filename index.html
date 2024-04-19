@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Generator 5000</title>
+  </head>
+  <body>
+    <header>
+      <img
+        class="header"
+        src="assets/header-bg.png"
+        alt="Color Scheme Generator 5000"
+      />
+      <h1 class="header-text">Color Scheme Generator 5000</h1>
+    </header>
+    <main>
+      <div class="controls-container">
+        <form>
+          <div class="column first-column">
+            <label for="base">Base Color</label>
+            <input type="color" id="base" name="base" />
+          </div>
+          <div class="column">
+            <label for="scheme">Color Scheme</label>
+            <select id="scheme" name="scheme">
+              <option value="monochrome">Monochrome</option>
+              <option value="monochrome-dark">Monochrome-Dark</option>
+              <option value="monochrome-light">Monochrome-Light</option>
+              <option value="analogic">Analogic</option>
+              <option value="complement">Complement</option>
+              <option value="analogic-complement">Analogic-Complement</option>
+              <option value="triad">Triad</option>
+            </select>
+          </div>
+          <div class="column third-column">
+            <button type="submit" aria-label="Generate a color scheme">
+              Generate
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="break"></div>
+      <div class="colors container">
+        <div class="color" id="color1">
+          <h2 id="color-1-label">#HEX CODE</h2>
+        </div>
+        <div class="color" id="color2">
+          <h2 id="color-2-label">#HEX CODE</h2>
+        </div>
+        <div class="color" id="color3">
+          <h2 id="color-3-label">#HEX CODE</h2>
+        </div>
+        <div class="color" id="color4">
+          <h2 id="color-4-label">#HEX CODE</h2>
+        </div>
+        <div class="color" id="color5">
+          <h2 id="color-5-label">#HEX CODE</h2>
+        </div>
+      </div>
+      <div class="toast" id="toast-notification"></div>
+    </main>
+    <footer class="footer">
+      <img
+        class="container"
+        src="assets/robotdog.png"
+        alt="Fetch 'Em stylized under a robot dog"
+      />
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
