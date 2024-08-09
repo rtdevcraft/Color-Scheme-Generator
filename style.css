@@ -138,7 +138,7 @@ button:hover {
   filter: brightness(160%);
 }
 
-.color h2 {
+.color-label {
   color: #fff;
   background-color: #293b4eba;
   display: flex;
@@ -148,6 +148,11 @@ button:hover {
   font-weight: 300;
   font-size: 1rem;
   padding: 0.2em;
+}
+
+.color-label.clicked {
+  background-color: rgb(209 224 240 / 73%);
+  color: #000;
 }
 
 .toast {

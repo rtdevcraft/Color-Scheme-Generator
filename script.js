@@ -8,6 +8,7 @@ const color2LabelEl = document.getElementById("color-2-label");
 const color3LabelEl = document.getElementById("color-3-label");
 const color4LabelEl = document.getElementById("color-4-label");
 const color5LabelEl = document.getElementById("color-5-label");
+const colorLabels =document.querySelectorAll(".color-label");
 const formEl = document.querySelector("form");
 const colorDivs = document.querySelectorAll(".color");
 let baseColorSelector = document.getElementById("base");
@@ -26,7 +27,7 @@ formEl.addEventListener("submit", (e) => {
 colorDivs.forEach((colorDiv) => {
   colorDiv.addEventListener("click", (e) => {
     copyHexCode(e);
-    colorDiv.classList.toggle("clicked");
+    colorLabels.classList.toggle("clicked");
     showToast("Hex code copied!");
   });
 });
